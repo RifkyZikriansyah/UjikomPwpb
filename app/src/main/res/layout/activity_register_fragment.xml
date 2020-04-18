@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorDark"
+    tools:context=".RegisterFragment">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="@dimen/_260sdp"
+        android:layout_height="@dimen/_500sdp"
+        android:alpha="0.9"
+        app:cardCornerRadius="@dimen/_20sdp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/_12sdp">
+
+            <TextView
+                android:id="@+id/txt_regis"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppinssemibold"
+                android:text="Welcome to\nCommunity Report"
+                android:textColor="@color/colorDark"
+                android:textSize="@dimen/_18ssp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/txt_regis_detail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppinsregular"
+                android:text="@string/let_s_start_by_getting_your_account_setup"
+                android:textColor="@color/colorDark"
+                android:textSize="@dimen/_11ssp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/txt_regis" />
+
+            <TextView
+                android:id="@+id/field_nik"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorDark"
+                android:layout_marginTop="@dimen/_11sdp"
+                android:fontFamily="@font/poppinssemibold"
+                android:text="@string/nik"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/txt_regis_detail" />
+
+            <EditText
+                android:id="@+id/txt_nik"
+                android:layout_width="@dimen/_190sdp"
+                android:layout_height="@dimen/_21sdp"
+                android:background="@drawable/text_field_login"
+                android:fontFamily="@font/poppinsmedium"
+                android:inputType="text"
+                android:textColor="@color/colorWhite"
+                android:textColorHint="@color/colorWhite"
+                android:textSize="@dimen/_12ssp"
+                app:layout_constraintStart_toStartOf="@id/field_nik"
+                app:layout_constraintTop_toBottomOf="@id/field_nik" />
+
+            <TextView
+                android:id="@+id/field_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorDark"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:fontFamily="@font/poppinssemibold"
+                android:text="@string/name"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/txt_nik" />
+
+            <EditText
+                android:id="@+id/txt_name"
+                android:layout_width="@dimen/_190sdp"
+                android:layout_height="@dimen/_21sdp"
+                android:background="@drawable/text_field_login"
+                android:fontFamily="@font/poppinsmedium"
+                android:inputType="text"
+                android:textColor="@color/colorWhite"
+                android:textColorHint="@color/colorWhite"
+                android:textSize="@dimen/_12ssp"
+                app:layout_constraintStart_toStartOf="@id/txt_nik"
+                app:layout_constraintTop_toBottomOf="@id/field_name" />
+
+            <TextView
+                android:id="@+id/field_phone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorDark"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:fontFamily="@font/poppinssemibold"
+                android:text="@string/phone"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/txt_name" />
+
+            <EditText
+                android:id="@+id/txt_phone"
+                android:layout_width="@dimen/_190sdp"
+                android:layout_height="@dimen/_21sdp"
+                android:background="@drawable/text_field_login"
+                android:fontFamily="@font/poppinsmedium"
+                android:inputType="number"
+                android:textColor="@color/colorWhite"
+                android:textColorHint="@color/colorWhite"
+                android:textSize="@dimen/_12ssp"
+                app:layout_constraintStart_toStartOf="@id/txt_nik"
+                app:layout_constraintTop_toBottomOf="@id/field_phone" />
+
+            <TextView
+                android:id="@+id/field_username"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorDark"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:fontFamily="@font/poppinssemibold"
+                android:text="@string/email"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/txt_phone" />
+
+            <EditText
+                android:id="@+id/txt_username"
+                android:layout_width="@dimen/_190sdp"
+                android:layout_height="@dimen/_21sdp"
+                android:background="@drawable/text_field_login"
+                android:fontFamily="@font/poppinsmedium"
+                android:inputType="textEmailAddress"
+                android:textColor="@color/colorWhite"
+                android:textColorHint="@color/colorWhite"
+                android:textSize="@dimen/_12ssp"
+                app:layout_constraintStart_toStartOf="@id/txt_nik"
+                app:layout_constraintTop_toBottomOf="@id/field_username" />
+
+            <TextView
+                android:id="@+id/field_pass"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorDark"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:fontFamily="@font/poppinssemibold"
+                android:text="@string/password"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/txt_username" />
+
+            <EditText
+                android:id="@+id/txt_pass"
+                android:layout_width="@dimen/_190sdp"
+                android:layout_height="@dimen/_21sdp"
+                android:background="@drawable/text_field_login"
+                android:fontFamily="@font/poppinsmedium"
+                android:inputType="textPassword"
+                android:textColor="@color/colorWhite"
+                android:textColorHint="@color/colorWhite"
+                android:textSize="@dimen/_12ssp"
+                app:layout_constraintStart_toStartOf="@id/txt_nik"
+                app:layout_constraintTop_toBottomOf="@id/field_pass" />
+
+
+            <TextView
+                android:id="@+id/field_confirm_pass"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorDark"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:fontFamily="@font/poppinssemibold"
+                android:text="@string/confirm_password"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/txt_pass" />
+
+            <EditText
+                android:id="@+id/txt_confirm_pass"
+                android:layout_width="@dimen/_190sdp"
+                android:layout_height="@dimen/_21sdp"
+                android:background="@drawable/text_field_login"
+                android:fontFamily="@font/poppinsmedium"
+                android:inputType="textPassword"
+                android:textColor="@color/colorWhite"
+                android:textColorHint="@color/colorWhite"
+                android:textSize="@dimen/_12ssp"
+                app:layout_constraintStart_toStartOf="@id/txt_nik"
+                app:layout_constraintTop_toBottomOf="@id/field_confirm_pass" />
+
+            <Button
+                android:id="@+id/regis"
+                android:layout_width="@dimen/_180sdp"
+                android:layout_height="@dimen/_35sdp"
+                android:layout_margin="@dimen/_40sdp"
+                android:background="@drawable/btn_regis_dark"
+                android:fontFamily="@font/poppinssemibold"
+                android:text="R E G I S T E R"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/_15ssp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/txt_confirm_pass" />
+
+            <TextView
+                android:id="@+id/txt_no_account"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_46sdp"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:fontFamily="@font/poppinsregular"
+                android:text="@string/you_have_account"
+                android:textColor="@color/colorDark"
+                android:textSize="@dimen/_10ssp"
+                app:layout_constraintStart_toStartOf="@id/regis"
+                app:layout_constraintTop_toBottomOf="@id/regis" />
+
+            <TextView
+                android:id="@+id/txt_login"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_6sdp"
+                android:fontFamily="@font/poppinsmedium"
+                android:text="@string/login"
+                android:textColor="@color/colorDark"
+                android:textSize="@dimen/_11ssp"
+                app:layout_constraintEnd_toEndOf="@id/regis"
+                app:layout_constraintTop_toBottomOf="@id/regis" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

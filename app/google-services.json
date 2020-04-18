@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "780116249165",
+    "firebase_url": "https://pelaporanmasyarakat-28ef3.firebaseio.com",
+    "project_id": "pelaporanmasyarakat-28ef3",
+    "storage_bucket": "pelaporanmasyarakat-28ef3.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:780116249165:android:504c94a7b2a03a0b2e6a04",
+        "android_client_info": {
+          "package_name": "com.example.ujikompwpb"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "780116249165-g7nclop1pcis6lhonoaodi6s0uegu3du.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.ujikompwpb",
+            "certificate_hash": "4f85687f1a2c0e3bfea701d7fa4d2fdb99d6d791"
+          }
+        },
+        {
+          "client_id": "780116249165-cppaescam49t3gpfmgq3q0amh2ord0fn.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDCQrBI3FSGdPnuMpo_VNVWyea50wZCdfU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "780116249165-cppaescam49t3gpfmgq3q0amh2ord0fn.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
